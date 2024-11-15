@@ -1,2 +1,9 @@
 node_modules
 .vercel
+build
+enterprise-pro-backend/build
+.env
+uploads
+pnpm-lock.yaml 
+.vscode
+.idea

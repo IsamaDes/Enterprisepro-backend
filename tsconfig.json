@@ -16,11 +16,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitAny": true,
-    "skipLibCheck": true,
-    "types": ["node", "express", "multer", "bcryptjs", "jsonwebtoken"],
-    "typeRoots": [
-      "./node_modules/@types"
-    ]
+   
 
   }
 }
