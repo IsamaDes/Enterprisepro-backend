@@ -1,7 +1,7 @@
 {
   "include": [
     "src/**/*"
-  ], 
+  ],
   "compilerOptions": {
     "jsx": "react",
     "target": "ES6",
@@ -17,7 +17,10 @@
     "strict": true,
     "noImplicitAny": true,
     "skipLibCheck": true,
-   
-  },
-  "exclude": ["node_modules"]
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node", "express", "multer", "bcryptjs", "jsonwebtoken"]
+
+
+    
+  }
 }
