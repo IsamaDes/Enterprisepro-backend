@@ -32,6 +32,8 @@
     /* Type Checking */
     "strict": true,                                      /* Enable all strict type-checking options. */
     "noImplicitAny": true,                               /* Enable error reporting for expressions and declarations with an implied 'any' type. */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+    "skipLibCheck": true  ,
+    "types": ["node", "express", "mongoose", "multer", "bcryptjs", "jsonwebtoken"] /* Specify which type definitions to include. */                               /* Skip type checking all .d.ts files. */
+  },
+  "typeRoots": ["./node_modules/@types"]
 }
