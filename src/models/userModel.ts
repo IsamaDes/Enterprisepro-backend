@@ -1,4 +1,6 @@
-import mongoose, { Document, Schema } from 'mongoose';
+import mongoose from 'mongoose';
+
+const { Schema, Document } = mongoose;
 
 // Define the TypeScript interface for the User document
 export interface IUser extends Document {
@@ -6,13 +8,13 @@ export interface IUser extends Document {
   contactPerson: string;
   email: string;
   phone: string;
-  location: string;
+  // location: string;
   password: string;
   role: 'admin' | 'user'; // or any other roles you want to define
 }
 
 // Define the Mongoose schema for the User model
-const userSchema: Schema = new Schema(
+const userSchema: typeof Schema = new Schema(
   {
     businessName: {
       type: String,

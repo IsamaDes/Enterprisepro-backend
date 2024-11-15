@@ -31,7 +31,8 @@
     "@types/stream-to-blob": "^2.0.0",
     "body-parser": "^1.20.3",
     "nodemon": "^3.0.3",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "typescript": "^5.6.3"
   },
   "dependencies": {
     "@react-email/components": "^0.0.14",
@@ -59,7 +60,6 @@
     "pdfkit": "^0.14.0",
     "react": "^18.2.0",
     "resend": "^3.2.0",
-    "stream-to-blob": "^2.0.1",
-    "typescript": "^5.1.6"
+    "stream-to-blob": "^2.0.1"
   }
 }

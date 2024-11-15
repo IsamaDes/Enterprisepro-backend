@@ -1,4 +1,7 @@
-import mongoose, { Document, Schema } from 'mongoose';
+import mongoose from 'mongoose';
+
+const { Schema, Document } = mongoose;
+
 
 // Define the TypeScript interface for the agent (document)
 export interface IAgent extends Document {
@@ -9,8 +12,7 @@ export interface IAgent extends Document {
 }
 
 // Define the Mongoose schema
-const agentSchema: Schema = new Schema(
-  {
+const agentSchema: typeof Schema = new Schema(  {
     name: {
       type: String,
       required: true,
