@@ -1,6 +1,6 @@
 {
   "include": [
-    "src/**/*", "api",
+    "src/**/*",
 ], 
   "compilerOptions": {
     "jsx": "react",
