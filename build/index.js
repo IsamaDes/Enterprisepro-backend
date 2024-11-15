@@ -15,6 +15,12 @@ const accountRoutes_1 = __importDefault(require("./routes/accountRoutes"));
 const body_parser_1 = __importDefault(require("body-parser"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
+setInterval(() => { if (global.gc) {
+    global.gc();
+}
+else {
+    console.warn('Garbage collection is not exposed');
+} }, 60000);
 // Middleware
 app.use(body_parser_1.default.json());
 app.use((0, cors_1.default)({ origin: ['http://localhost:5173', 'https://enterprise-pro.vercel.app'],

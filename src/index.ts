@@ -12,7 +12,10 @@ import bodyParser from 'body-parser';
 
 dotenv.config();
 
+
 const app = express();
+
+setInterval(() => { if (global.gc) { global.gc(); } else { console.warn('Garbage collection is not exposed'); } }, 60000);
 
 // Middleware
 app.use(bodyParser.json());
