@@ -1,17 +1,16 @@
-import mongoose from 'mongoose';
+import mongoose, { Document, Schema } from 'mongoose';
 
-const { Schema, Document } = mongoose;
 // Define the TypeScript interface for the Business document
 export interface IBusiness extends Document {
   name: string;
   contactPerson: string;
   email: string;
   phoneNumber: string;
-  // location: string;
+  location: string;
 }
 
 // Define the Mongoose schema for the Business model
-const businessSchema: typeof Schema = new Schema(
+const businessSchema: Schema = new Schema(
   {
     name: {
       type: String,

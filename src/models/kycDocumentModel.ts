@@ -1,6 +1,5 @@
-import mongoose from 'mongoose';
+import mongoose, { Document, Schema } from 'mongoose';
 
-const { Schema, Document } = mongoose;
 // Define TypeScript interface for the KYC Document
 export interface IKycDocument extends Document {
   userId: mongoose.Types.ObjectId;
@@ -13,7 +12,7 @@ export interface IKycDocument extends Document {
 }
 
 // Define the Mongoose schema for KYC Document
-const kycDocumentSchema: typeof Schema = new Schema(
+const kycDocumentSchema: Schema = new Schema(
   {
     userId: {
       type: mongoose.Schema.Types.ObjectId,
